@@ -1,5 +1,6 @@
-<!-- .slide: data-background="./img/architecture.jpg" -->
-<!-- .slide: data-background-opacity=0.2 -->
+<!-- .slide: data-background="./img/architecture.jpg" 
+data-background-opacity="0.2" -->
+
 # Software Engineering
 
 --
