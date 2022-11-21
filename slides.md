@@ -6,9 +6,9 @@
 
 ## Modulbeschreibung
 
-In diesem Modul sollen aktuelle Themen des Software Engineerings aufgegriffen und den Studierenden vermittelt werden bzw. durch die Studierenden selbst erarbeitet werden. Es sollen Lehr- und Lerninhalte nach ihrer aktuellen Bedeutung (auch für die Partnerunternehmen) ausgewählt werden. <!-- .element: style="text-align: left;" -->
+<p style="text-align: left;">In diesem Modul sollen aktuelle Themen des Software Engineerings aufgegriffen und den Studierenden vermittelt werden bzw. durch die Studierenden selbst erarbeitet werden. Es sollen Lehr- und Lerninhalte nach ihrer aktuellen Bedeutung (auch für die Partnerunternehmen) ausgewählt werden.</p> 
 
-In der Lehreinheit 2 werden exemplarisch neue Ansätze der Modellierung, der Anforderungsanalyse, der Softwareentwicklung und des Projektmanagements sowie aktuelle und moderne Frameworks aufgegriffen <!-- .element: style="text-align: left;" -->
+<p style="text-align: left;">In der Lehreinheit 2 werden exemplarisch neue Ansätze der Modellierung, der Anforderungsanalyse, der Softwareentwicklung und des Projektmanagements sowie aktuelle und moderne Frameworks aufgegriffen</p>
 
 --
 
