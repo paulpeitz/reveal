@@ -1,6 +1,7 @@
-.reveal { color:white }
+.reveal { color:white;
+--r-heading-color: lightgrey;}
 
-h1 { color:white }
+
 
 
 li.co {
