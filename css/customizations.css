@@ -7,6 +7,10 @@
   z-index: 1;
 }
 
+.slide {
+	data-background-opacity=0.2
+}
+
 li.co {
 	font-size:0.67em;
 	list-style-type: none;
