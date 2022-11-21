@@ -1,8 +1,13 @@
 .reveal { color:white;
 --r-heading-color: lightgrey;}
 
-
-
+#logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 20%;
+  z-index: 1;
+}
 
 li.co {
 	font-size:0.67em;
