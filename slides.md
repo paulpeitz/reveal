@@ -1,6 +1,4 @@
-# reveal.js Demo
-
---
+<!-- .slide: data-background="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" -->
 
 # Software Engineering
 
