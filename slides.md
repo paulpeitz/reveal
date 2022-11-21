@@ -1,12 +1,12 @@
-# Demo
+# reveal.js Demo
 
 --
 
-## Typography
+## Erste Folie
 
 ---
 
-## Quotes
+## Zweite Folie
 
 > Quotes are ~~hard~~ easy
 > to write - but you can use `code`
