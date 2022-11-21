@@ -1,6 +1,6 @@
 <!-- .slide: data-background-image="./img/architecture.jpg" -->
 
-# Ausgewählte Aspekte des Software-Engineering 2
+# Ausgewählte Aspekte des Software-Engineering 2 <!-- .element: class="r-fit-text" -->
 
 --
 
