@@ -26,60 +26,30 @@ Ihre Präsentationen
 
 --
 
-## Unordered Lists
+## Mögliche Themen
 
-* a
-* b
-  * 1
-  * 2
-    * I
-* c
+* Cloud Native Development
+* Blockchain
+* Test Driven Development
+* Low Code / No Code
+* Code Qualität
+* GitHub
 
----
+--
 
-## Ordered Lists
+## Cloud Native Development
 
-automatic numbering
+--
 
-1. a
-1. b
-    1. 1
-    1. 2
-1. c
+## Blockchain
 
----
+--
 
-## Ordered Lists
+## Test Driven Development
 
-custom numbering
+--
 
-1. a  
-2. b  
-    2.1. 1  
-    2.2. 2  
-3. c
-
----
-
-## Definition Lists
-
-(actually: line breaks in long lines in lists...)
-
-* First Term  
-This is the definition of the first term.
-* Second Term  
-This is one definition of the second term.  
-This is another definition of the second term.
-
----
-
-## Font Awesome
-
-*  Itym One<!-- .element: class="mdfa fa-info-circle"--> (this is a feature test in a very long item)
-*  Itym Two<!-- .element: class="mdfa fa-question-circle"-->
-*  Itym Three<!-- .element: class="mdfa fa-exclamation-circle"-->
-*  Itym 4<!-- .element: class="mdfa fa-exclamation-triangle"-->  
-with forced line break!
+## Low Code / No Code
 
 --
 
