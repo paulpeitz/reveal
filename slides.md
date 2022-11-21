@@ -2,31 +2,30 @@
 
 --
 
-## Erste Folie
+# Software Engineering
 
----
+--
 
-## Zweite Folie
+## Orga
 
 > Quotes are ~~hard~~ easy
 > to write - but you can use `code`
 
----
+--
 
-## Styles
+## Ablauf
 
-You can freely mix **bold**, *italics*, `code` and normal styles
+Vorstellung der Themen
 
-* normal
-* **bold**
-* *italics*
-* `code`
+Einteilung der Gruppen
+
+Ihre Präsentationen
 
 --
 
-## Lists
+## Lernen durch Lehre
 
----
+--
 
 ## Unordered Lists
 
