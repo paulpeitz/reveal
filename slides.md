@@ -1,4 +1,4 @@
-<!-- .slide: data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)" -->
+<!-- .slide: data-background-image="assets/img/architecture.jpg" -->
 
 ## Ausgewählte Aspekte des Software-Engineering 2 <!-- .element: class="r-fit-text"  -->
 
