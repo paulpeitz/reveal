@@ -1,5 +1,5 @@
-<!-- .slide: data-background="./img/architecture.jpg" 
-data-background-opacity="0.2" -->
+<!-- .slide: data-background-image="./img/architecture.jpg" 
+data-background-opacity=0.2 -->
 
 # Ausgewählte Aspekte des Software-Engineering 2
 
