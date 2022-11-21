@@ -7,7 +7,7 @@
   z-index: 1;
 }
 
-.slide {
+.slide-background.present {
 	data-background-opacity=0.2
 }
 
