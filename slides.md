@@ -54,12 +54,18 @@
 
 ## Cloud Native Development
 
+<div id="left">
+
 - Definition von UX und seine Rolle im Entwicklungsprozess
 - Prototyping zur Verbesserung der UX
 - Vorstellung Figma
+
+</div>
   
+<div id="right">  
 Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Computing nutzt, um skalierbare Anwendungen in Cloud Infrastrukturen, Plattformen und Umgebungen zu erstellen und auszuführen. Gemäß der Cloud Native Computing Foundation (CNCF) prägen diesen Remote-Computing-Ansatz insbesondere Technologien wie Container, Microservices sowie serverlose Funktionen und unveränderliche Infrastrukturen (Immutable Infrastructures und Infrastructure as Code), die zumeist über deklarativen Code bereitgestellt werden.
-  
+</div>
+
 --
 
 ## UX und Prototypting
