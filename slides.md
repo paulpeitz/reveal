@@ -64,9 +64,9 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
   
 <div id="right">
   
-* Konzepte (Vor- und Nachteile)
-* Tools (Entwicklung und Verwaltung)
-* Sprachen
+ - Konzepte (Vor- und Nachteile)
+ - Tools (Entwicklung und Verwaltung)
+ - Sprachen
 
   </div>  
   
@@ -76,9 +76,9 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
 
 <div id="left">
 
-* Definition von UX und seine Rolle im Entwicklungsprozess
-* Prototyping zur Verbesserung der UX
-* Vorstellung Figma
+- Definition von UX und seine Rolle im Entwicklungsprozess
+- Prototyping zur Verbesserung der UX
+- Vorstellung Figma
 
 </div>
   
