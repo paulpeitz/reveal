@@ -29,6 +29,15 @@
 	line-height: 1.5; 
 }
 
+.right-text {
+	margin: 10px 0 15px 0;
+	float: right;
+	text-align: left;
+	z-index:-10;
+	width:48%;
+	font-size: 0.4em;
+}
+
 .slide-background.present {
 	opacity: 0.3 !important;
 }
