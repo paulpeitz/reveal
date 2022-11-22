@@ -90,7 +90,7 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
 
 ## Internet of Things und Edge Computing
 
-<p style="text-align: left;">
+<p style="text-align: left;" class="decent x-small">
 Das Internet of Things (IoT) erzeugt große Datenmengen, die verarbeitet und analysiert werden müssen, um sie nutzbar zu machen. Edge Computing rückt die  Rechenkapazitäten näher an den Endbenutzer oder die Datenquelle heran, z. B. ein IoT-Gerät.<br>
 Auf diese Weise können die IoT-Daten direkt am Netzwerkrand, dem sogenannten „Edge“, an dem sich das Gerät befindet, erfasst und verarbeitet werden, ohne dass die Daten erst an ein Rechenzentrum oder eine Cloud gesendet werden. So können Maßnahmen wie die Erkennung von Anomalien für die prädiktive Wartung schneller eingeleitet werden. <br>
 Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu nutzen, wird immer wertvoller. 
