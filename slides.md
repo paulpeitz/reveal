@@ -82,7 +82,7 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
   
 <div id="right">
 
-  Hier kommt ein Bild hin
+ [Figma](./img/figma1.webp):
   
 </div>  
   
