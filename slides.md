@@ -97,6 +97,12 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 
 ## Blockchain
 
+- Technologie der Blockchain
+- Bitcoinm, Etherum und der Rest
+- PoW vs. PoS
+- Smart Contracts
+- Anwendungsfälle
+
 --
 
 ## Test Driven Development
@@ -122,6 +128,13 @@ Noch bevor ein Programm ausgeführt wird können Fehler bzw. Probleme erkannt we
 --
 
 ## GitHub
+
+github als Plattform zur Quellcodeverwaltung und darüber hinaus...
+
+ - Repositories, Issues, Actions
+ - github Pages
+ - GitHub Codespace und Copilot
+  - CI/CD und Automation
 
 --
 
