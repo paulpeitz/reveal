@@ -108,6 +108,10 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 
 ## Test Driven Development
 
+- Erst die Tests, dann der eigentliche Code...
+- Beschreibung des Ansatzes, mit Vor- und Nachteilen.
+- Konzept des "Shift Left Testings"
+
 --
 
 ## Low Code / No Code
