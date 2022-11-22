@@ -14,21 +14,36 @@
 
 ## Ablauf
 
-Vorstellung der Themen
-
-Einteilung der Gruppen
-
-Ihre Präsentationen
+ * Kickoff und Themenvergabe
+  * Vorlesungskonzept: Lernen durch Lehren
+ * 8 Vorlesungstermine
+  * Gestaltung eines Veranstaltungstermins
+  * 3-4 Studierende pro Gruppe
+  * Präsentation, Demo, Übung
+  * Abgabe der Materialien per Mail
+* Klausur
+  *Besteht aus Inhalten der Präsentationen
+  * Dauer 75 Minuten
 
 --
 
 ## Lernen durch Lehre
+
+<p style="text-align: left; font-size: 0.4em;">Ist eine handlungsorientierte und konstruktivistische Lernmethode, bei der sich Studierende einen bestimmten Vorlesungsinhalt selbstständig aneignen und im Anschluss ihren Kommilitonen vermitteln.</p>
+
+<p style="text-align: left; font-size: 0.4em;">Die Studierenden prüfen außerdem mit Hilfe von selbstgewählten und geeigneten Übungen, ob die Studierende die Informationen wirklich verstanden haben.</p>
+
+<p style="text-align: left; font-size: 0.4em;">Die Studierenden entwickeln, fördern und stärken vor allem kognitive Fähigkeiten und soziale Kompetenzen. Hierzu zählen Systemdenken und das Vermögen Wesentliches von Unwesentlichem zu unterscheiden sowie Teamfähigkeit und Kommunikationsfähigkeit.</p>
+
+<p style="text-align: left; font-size: 0.4em;">Hierbei geht es jedoch nicht um eine umfassende Grundlagenforschung, sondern vielmehr um das Vermitteln von fachspezifischen und berufsangewandten Kenntnissen. Gerade in der vorherrschenden Informationsgesellschafft, gilt es permanent die Informationsströme zu kanalisieren, wichtiges Wissen zu filtern und auf konkrete Einsatzgebiete sinnvoll anzuwenden.</p>
 
 --
 
 ## Mögliche Themen
 
 * Cloud Native Development
+* UX und Prototyping (Figma)
+* Internet of Things und Edge Computing
 * Blockchain
 * Test Driven Development
 * Low Code / No Code
@@ -53,167 +68,11 @@ Ihre Präsentationen
 
 --
 
-## Fragments
-
----
-
-## Dont reveal all at once!
-
-- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-- Item 3 <!-- .element: class="fragment" data-fragment-index="3" -->
-
----
-
-## Fancy!
-
-- Highlight Red <!-- .element: class="fragment highlight-red" data-fragment-index="2" -->
-- Fade In Then Out <!-- .element: class="fragment fade-in-then-out" data-fragment-index="1" -->
-- Slide up <!-- .element: class="fragment fade-up" data-fragment-index="3" -->
-- Appear and step aside  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
-
----
-
-## Distinguished
-
-- Item 1 <!-- .element: class="fragment semi-fade-out" data-fragment-index="1" -->
-- Item 2 <!-- .element: class="fragment semi-fade-out" data-fragment-index="2" -->
-- Item 3 <!-- .element: class="fragment semi-fade-out" data-fragment-index="3" -->
-- Item 4 <!-- .element: class="fragment semi-fade-out" data-fragment-index="4" -->
-- Item 5
-
----
-
-## FAQ (Example)
-
-*  Question One?<!-- .element: class="fragment mdfa fa-question-circle"-->
-*  Answer One!<!-- .element: class="fragment mdfa fa-exclamation-circle"-->
-*  Question Two?<!-- .element: class="fragment mdfa fa-question-circle"-->
-*  Answer Two!<!-- .element: class="fragment mdfa fa-exclamation-circle"-->
-*  Question Three?<!-- .element: class="fragment mdfa fa-question-circle"-->
-*  Answer Three!<!-- .element: class="fragment mdfa fa-exclamation-circle"-->
+## Code Qualität
 
 --
 
-## Syntax highlighting   
-
----
-
-## Java 
-
-```java [1-6|3-5]
-public class TheFirst extends Object
-{
-  
-public static void main(String[] args)
-  
-{
-  
-}
-}
-```
-
----
-
-## JavaScript
-
-```js [1-2|3|4]
-    let a = 1;
-    let b = 2;
-    let c = x => 1 + 2 + x;
-    c(3);
-```
-
----
-
-## Callouts 
-
-<!--https://fsymbols.com/signs/bullet-point/-->
-```java
-String switchExpressionPreview13(Direction way) {
-    return switch (way) {                         ➊
-        case N -> "Up";                           ➋
-        case S -> { yield "Down"; }               ➌
-        case E, W -> "Somewhere left or right";
-        // default -> "Foo"                       ➍
-    };
-}
-```
-
-- ➊ `switch` can be used as expression
-- ➋ `->` instead of `:` → no `break;` necessary!
-- ➌ Lambdas can be used to. For _expressions_ they must `yield` a value [version]#13#
-- ➍ `default` can be ommitted if a) no expression or b) `enum` with every value handled
-
----
-
-## Callouts  (Alternative)
-
-<!--https://fsymbols.com/signs/bullet-point/-->
-```java
-String switchExpressionPreview13(Direction way) {
-    return switch (way) {                         ①
-        case N -> "Up";                           ②
-        case S -> { yield "Down"; }               ③
-        case E, W -> "Somewhere left or right";
-        // default -> "Foo"                       ④
-    };
-}
-```
-- ① <!-- .element: class="co"-->`switch` can be used as expression 
-- ② <!-- .element: class="co"-->`->` instead of `:` → no `break;` necessary!
-- ③ <!-- .element: class="co"-->Lambdas can be used to. For _expressions_ they must `yield` a value [version]#13#
-- ④ <!-- .element: class="co"-->`default` can be ommitted if a) no expression or b) `enum` with every value handled
-
----
-
-#### Try-with-resources now support „effectively final“ variables
-
-```java
-var inputStream = new FileInputStream(".gitignore");
-try (inputStream) { … }
-```
-
-#### Private methods in Interfaces<!-- .element: class="fragment" data-fragment-index="2" -->
-
-```java
-interface Version {
-    byte[] digits();
-    default String text() { return text(digits()); }
-    private String text(byte[] version) { … }
-}
-```
-<!-- .element: class="fragment" data-fragment-index="2" -->
-
---
-
-## Math
-
----
-
-## Single Line
-
-
-`$$ J(\theta_0,\theta_1) = \sum_{i=0} $$`
-
----
-
-## Multiple lines
-
-`$$\begin{aligned}
-  \dot{x} & = \sigma(y-x) \\
-  \dot{y} & = \rho x - y - xz \\
-  \dot{z} & = -\beta z + xy
-  \end{aligned} $$`
-
---
-
-## Being subtle
-
-* Point a
-* Point b   
-<span>(but that is not important)</span><!-- .element: class="decent x-small"-->
-* Point c
+## GitHub
 
 --
 
@@ -224,61 +83,6 @@ interface Version {
 
 ![](https://assets.amuniversal.com/0e1eaf909fcf012f2fe600163e41dd5b)
 
---
 
-## Transitions
-
----
-
-<!-- .slide:  data-transition="slide"-->
-### The train goes on ...
-* none<!-- .element: class="xx-small"-->  
-Switch backgrounds instantly
-* fade<!-- .element: class="xx-small"-->  
-Cross fade — default for background transitions
-* slide<!-- .element: class="xx-small"-->  
-Slide between backgrounds — default for slide transitions
-* convex<!-- .element: class="xx-small"-->  
-Slide at a convex angle
-* concave<!-- .element: class="xx-small"-->  
-Slide at a concave angle
-* zoom<!-- .element: class="xx-small"-->  
-Scale the incoming slide up so it grows in from the center of the screen
-
----
-
-<!-- .slide:  data-transition="slide"-->
-### and on …
-* none<!-- .element: class="xx-small"-->  
-Switch backgrounds instantly
-* fade<!-- .element: class="xx-small"-->  
-Cross fade — default for background transitions
-
----
-
-<!-- .slide:  data-transition="convex-in concave-out"-->
-### and stops.
-* fade<!-- .element: class="xx-small"-->  
-Cross fade — default for background transitions
-* slide<!-- .element: class="xx-small"-->  
-Slide between backgrounds — default for slide transitions
-
----
-
-<!-- .slide:  data-transition="fade-in fade-out"-->
-### (Passengers entering and leaving)
-* slide<!-- .element: class="xx-small"-->  
-Slide between backgrounds — default for slide transitions
-* convex<!-- .element: class="xx-small"-->  
-Slide at a convex angle
-
----
-
-<!-- .slide:  data-transition="fade"-->
-### And it starts again.
-* convex<!-- .element: class="xx-small"-->  
-Slide at a convex angle
-* concave<!-- .element: class="xx-small"-->  
-Slide at a concave angle
 
 
