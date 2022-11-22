@@ -15,27 +15,27 @@
 ## Ablauf
 
  * Kickoff und Themenvergabe
-  * Vorlesungskonzept: Lernen durch Lehren
+   * Vorlesungskonzept: Lernen durch Lehren
  * 8 Vorlesungstermine
-  * Gestaltung eines Veranstaltungstermins
-  * 3-4 Studierende pro Gruppe
-  * Präsentation, Demo, Übung
-  * Abgabe der Materialien per Mail
+   * Gestaltung eines Veranstaltungstermins
+   * 3-4 Studierende pro Gruppe
+   * Präsentation, Demo, Übung
+   * Abgabe der Materialien per Mail
 * Klausur
-  *Besteht aus Inhalten der Präsentationen
-  * Dauer 75 Minuten
+   * Besteht aus Inhalten der Präsentationen
+   * Dauer 75 Minuten
 
 --
 
 ## Lernen durch Lehre
 
-<p style="text-align: left; font-size: 0.4em;">Ist eine handlungsorientierte und konstruktivistische Lernmethode, bei der sich Studierende einen bestimmten Vorlesungsinhalt selbstständig aneignen und im Anschluss ihren Kommilitonen vermitteln.</p>
+<p style="text-align: left; font-size: 0.6em;">Ist eine handlungsorientierte und konstruktivistische Lernmethode, bei der sich Studierende einen bestimmten Vorlesungsinhalt selbstständig aneignen und im Anschluss ihren Kommilitonen vermitteln.</p>
 
-<p style="text-align: left; font-size: 0.4em;">Die Studierenden prüfen außerdem mit Hilfe von selbstgewählten und geeigneten Übungen, ob die Studierende die Informationen wirklich verstanden haben.</p>
+<p style="text-align: left; font-size: 0.6em;">Die Studierenden prüfen außerdem mit Hilfe von selbstgewählten und geeigneten Übungen, ob die Studierende die Informationen wirklich verstanden haben.</p>
 
-<p style="text-align: left; font-size: 0.4em;">Die Studierenden entwickeln, fördern und stärken vor allem kognitive Fähigkeiten und soziale Kompetenzen. Hierzu zählen Systemdenken und das Vermögen Wesentliches von Unwesentlichem zu unterscheiden sowie Teamfähigkeit und Kommunikationsfähigkeit.</p>
+<p style="text-align: left; font-size: 0.6em;">Die Studierenden entwickeln, fördern und stärken vor allem kognitive Fähigkeiten und soziale Kompetenzen. Hierzu zählen Systemdenken und das Vermögen Wesentliches von Unwesentlichem zu unterscheiden sowie Teamfähigkeit und Kommunikationsfähigkeit.</p>
 
-<p style="text-align: left; font-size: 0.4em;">Hierbei geht es jedoch nicht um eine umfassende Grundlagenforschung, sondern vielmehr um das Vermitteln von fachspezifischen und berufsangewandten Kenntnissen. Gerade in der vorherrschenden Informationsgesellschafft, gilt es permanent die Informationsströme zu kanalisieren, wichtiges Wissen zu filtern und auf konkrete Einsatzgebiete sinnvoll anzuwenden.</p>
+<p style="text-align: left; font-size: 0.6em;">Hierbei geht es jedoch nicht um eine umfassende Grundlagenforschung, sondern vielmehr um das Vermitteln von fachspezifischen und berufsangewandten Kenntnissen. Gerade in der vorherrschenden Informationsgesellschafft, gilt es permanent die Informationsströme zu kanalisieren, wichtiges Wissen zu filtern und auf konkrete Einsatzgebiete sinnvoll anzuwenden.</p>
 
 --
 
@@ -54,7 +54,9 @@
 
 ## Cloud Native Development
 
-<p style="text-align: left; font-size: 0.4em;">Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Computing nutzt, um skalierbare Anwendungen in Cloud Infrastrukturen, Plattformen und Umgebungen zu erstellen und auszuführen. Gemäß der Cloud Native Computing Foundation (CNCF) prägen diesen Remote-Computing-Ansatz insbesondere Technologien wie Container, Microservices sowie serverlose Funktionen und unveränderliche Infrastrukturen (Immutable Infrastructures und Infrastructure as Code), die zumeist über deklarativen Code bereitgestellt werden.</p>
+<p style="text-align: left; font-size: 0.6em;">
+Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Computing nutzt, um skalierbare Anwendungen in Cloud Infrastrukturen, Plattformen und Umgebungen zu erstellen und auszuführen. Gemäß der Cloud Native Computing Foundation (CNCF) prägen diesen Remote-Computing-Ansatz insbesondere Technologien wie Container, Microservices sowie serverlose Funktionen und unveränderliche Infrastrukturen (Immutable Infrastructures und Infrastructure as Code), die zumeist über deklarativen Code bereitgestellt werden.
+</p>
 
 * Konzepte (Vor- und Nachteile)
 * Tools (Entwicklung und Verwaltung)
@@ -72,11 +74,11 @@
 
 ## Internet of Things und Edge Computing
 
-					<p style="text-align: left;">
-					Das Internet of Things (IoT) erzeugt große Datenmengen, die verarbeitet und analysiert werden müssen, um sie nutzbar zu machen. Edge Computing rückt die  Rechenkapazitäten näher an den Endbenutzer oder die Datenquelle heran, z. B. ein IoT-Gerät.<br>
-					Auf diese Weise können die IoT-Daten direkt am Netzwerkrand, dem sogenannten „Edge“, an dem sich das Gerät befindet, erfasst und verarbeitet werden, ohne dass die Daten erst an ein Rechenzentrum oder eine Cloud gesendet werden. So können Maßnahmen wie die Erkennung von Anomalien für die prädiktive Wartung schneller eingeleitet werden. <br>
-					Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu nutzen, wird immer wertvoller. 
-					</p>
+<p style="text-align: left;">
+Das Internet of Things (IoT) erzeugt große Datenmengen, die verarbeitet und analysiert werden müssen, um sie nutzbar zu machen. Edge Computing rückt die  Rechenkapazitäten näher an den Endbenutzer oder die Datenquelle heran, z. B. ein IoT-Gerät.<br>
+Auf diese Weise können die IoT-Daten direkt am Netzwerkrand, dem sogenannten „Edge“, an dem sich das Gerät befindet, erfasst und verarbeitet werden, ohne dass die Daten erst an ein Rechenzentrum oder eine Cloud gesendet werden. So können Maßnahmen wie die Erkennung von Anomalien für die prädiktive Wartung schneller eingeleitet werden. <br>
+Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu nutzen, wird immer wertvoller. 
+</p>
 
 ## Blockchain
 
@@ -95,6 +97,12 @@ Während Low Code mit einem geringen Programmieraufwand auskommt, verzichten No 
 --
 
 ## Code Qualität
+
+Noch bevor ein Programm ausgeführt wird können Fehler bzw. Probleme erkannt werden, indem man den Quellcode untersucht.
+
+ * Definition "Guter Code"
+ * Vorgehen statischer Codecheck (automatisch, Code Review)
+ * Tools für Codecheck
 
 --
 
