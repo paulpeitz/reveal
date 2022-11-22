@@ -52,24 +52,26 @@
 
 --
 
-<!-- .slide: data-background-image="./img/cloud.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/cloud.jpg" -->
 ## Cloud Native Development
 
 <div class="left">
 
-- Definition von UX und seine Rolle im Entwicklungsprozess
-- Prototyping zur Verbesserung der UX
-- Vorstellung Figma
+- Konzept
+- Sprachen
+- Tools
+- Vor- und Nachteile
 
 </div>
   
-<div class="right-text">  
+<div class="right-text r-fit-text">  
 Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Computing nutzt, um skalierbare Anwendungen in Cloud Infrastrukturen, Plattformen und Umgebungen zu erstellen und auszuführen. Gemäß der Cloud Native Computing Foundation (CNCF) prägen diesen Remote-Computing-Ansatz insbesondere Technologien wie Container, Microservices sowie serverlose Funktionen und unveränderliche Infrastrukturen (Immutable Infrastructures und Infrastructure as Code), die zumeist über deklarativen Code bereitgestellt werden.
 </div>
 
 --
 
-<!-- .slide: data-background-image="./img/ui2.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/ui2.jpg" -->
+
 ## UX und Prototypting
 
 <div class="left">
@@ -88,7 +90,7 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
   
 --
 
-<!-- .slide: data-background-image="./img/iot.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/iot.jpg" -->
 
 ## Internet of Things und Edge Computing
 
@@ -100,7 +102,7 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 
 --
 
-<!-- .slide: data-background-image="./img/chain.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/chain.jpg"  -->
 
 ## Blockchain
 
@@ -108,11 +110,11 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 - Bitcoinm, Etherum und der Rest
 - PoW vs. PoS
 - Smart Contracts
-- Anwendungsfälle
+- (sinnvolle) Anwendungsfälle
 
 --
 
-<!-- .slide: data-background-image="./img/test1.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/test1.jpg" -->
 
 ## Test Driven Development
 
@@ -122,7 +124,7 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 
 --
 
-<!-- .slide: data-background-image="./img/robot.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/robot.jpg" -->
 
 ## Low Code / No Code
 
@@ -132,7 +134,7 @@ Während Low Code mit einem geringen Programmieraufwand auskommt, verzichten No 
 
 --
 
-<!-- .slide: data-background-image="./img/sourcecode2.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/sourcecode2.jpg" -->
 
 ## Code Qualität
 
@@ -144,7 +146,7 @@ Während Low Code mit einem geringen Programmieraufwand auskommt, verzichten No 
 
 --
 
-<!-- .slide: data-background-image="./img/github.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/github.jpg" -->
 
 ## GitHub
 
