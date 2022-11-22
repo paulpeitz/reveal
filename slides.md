@@ -55,7 +55,7 @@
 ## Cloud Native Development
 
 <div id="left">
-  
+
 - Definition von UX und seine Rolle im Entwicklungsprozess
 - Prototyping zur Verbesserung der UX
 - Vorstellung Figma
