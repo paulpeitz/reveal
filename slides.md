@@ -52,6 +52,7 @@
 
 --
 
+<!-- .slide: data-background-image="./img/cloud2.jpg" data-background-opacity=0.2 -->
 ## Cloud Native Development
 
 <div class="left">
@@ -68,6 +69,7 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
 
 --
 
+<!-- .slide: data-background-image="./img/ui2.jpg" data-background-opacity=0.2 -->
 ## UX und Prototypting
 
 <div class="left">
@@ -94,6 +96,10 @@ Auf diese Weise können die IoT-Daten direkt am Netzwerkrand, dem sogenannten �
 Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu nutzen, wird immer wertvoller. 
 </p>
 
+--
+
+<!-- .slide: data-background-image="./img/chain.jpg" data-background-opacity=0.2 -->
+
 ## Blockchain
 
 - Technologie der Blockchain
@@ -103,6 +109,8 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 - Anwendungsfälle
 
 --
+
+<!-- .slide: data-background-image="./img/test1.jpg" data-background-opacity=0.2 -->
 
 ## Test Driven Development
 
@@ -129,6 +137,8 @@ Noch bevor ein Programm ausgeführt wird können Fehler bzw. Probleme erkannt we
  * Tools für Codecheck
 
 --
+
+<!-- .slide: data-background-image="./img/github.jpg" data-background-opacity=0.2 -->
 
 ## GitHub
 
