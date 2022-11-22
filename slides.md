@@ -52,7 +52,7 @@
 
 --
 
-<!-- .slide: data-background-image="./img/cloud2.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/cloud.jpg" data-background-opacity=0.2 -->
 ## Cloud Native Development
 
 <div class="left">
@@ -88,6 +88,8 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
   
 --
 
+<!-- .slide: data-background-image="./img/iot.jpg" data-background-opacity=0.2 -->
+
 ## Internet of Things und Edge Computing
 
 <p style="text-align: left;" class="r-fit-text">
@@ -120,6 +122,8 @@ Die Fähigkeit von IoT-Geräten, Rechenleistung zur Analyse von Echtzeitdaten zu
 
 --
 
+<!-- .slide: data-background-image="./img/robot.jpg" data-background-opacity=0.2 -->
+
 ## Low Code / No Code
 
 Low Code und No Code sind Entwicklungs-Ansätze in der IT, die mit wenigen beziehungsweise vollständig ohne Programmierkenntnisse auskommen.
@@ -127,6 +131,8 @@ Low Code und No Code sind Entwicklungs-Ansätze in der IT, die mit wenigen bezie
 Während Low Code mit einem geringen Programmieraufwand auskommt, verzichten No Code Plattformen gänzlich auf Programmierarbeit des Anwenders. Beide Technologien tragen dazu bei, dass zahlreiche Anwendungsgebiete in der Digitalisierung keiner manuellen Programmierung mehr bedürfen.
 
 --
+
+<!-- .slide: data-background-image="./img/sourcecode2.jpg" data-background-opacity=0.2 -->
 
 ## Code Qualität
 
@@ -149,14 +155,7 @@ github als Plattform zur Quellcodeverwaltung und darüber hinaus...
  - GitHub Codespace und Copilot
   - CI/CD und Automation
 
---
 
-## Images
-
-<span>To say it with
-[Dilbert](https://dilbert.com/strip/1995-12-10):</span><!-- .element: class="decent x-small"-->
-
-![](https://assets.amuniversal.com/0e1eaf909fcf012f2fe600163e41dd5b)
 
 
 
