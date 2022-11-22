@@ -63,7 +63,7 @@
 
 </div>
   
-<div class="right">  
+<div class="right-text">  
 Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Computing nutzt, um skalierbare Anwendungen in Cloud Infrastrukturen, Plattformen und Umgebungen zu erstellen und auszuführen. Gemäß der Cloud Native Computing Foundation (CNCF) prägen diesen Remote-Computing-Ansatz insbesondere Technologien wie Container, Microservices sowie serverlose Funktionen und unveränderliche Infrastrukturen (Immutable Infrastructures und Infrastructure as Code), die zumeist über deklarativen Code bereitgestellt werden.
 </div>
 
@@ -136,9 +136,9 @@ Während Low Code mit einem geringen Programmieraufwand auskommt, verzichten No 
 
 ## Code Qualität
 
-Noch bevor ein Programm ausgeführt wird können Fehler bzw. Probleme erkannt werden, indem man den Quellcode untersucht.
-
- * Definition "Guter Code"
+ * Definition "Guter Code, schlechter Code"
+ * Code Smells, Refactoring
+ * Clean Code als Grundlage
  * Vorgehen statischer Codecheck (automatisch, Code Review)
  * Tools für Codecheck
 
