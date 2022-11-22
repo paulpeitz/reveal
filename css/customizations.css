@@ -7,7 +7,7 @@
   z-index: 1;
 }
 
-#left {
+.left {
 	margin: 10px 0 15px 20px;
 	text-align: left;
 	float: left;
@@ -17,7 +17,7 @@
 	line-height: 1.5; 
 }
 
-#right {
+.right {
 	margin: 10px 0 15px 0;
 	float: right;
 	text-align: left;
