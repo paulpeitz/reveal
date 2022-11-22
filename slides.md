@@ -156,9 +156,3 @@ github als Plattform zur Quellcodeverwaltung und darüber hinaus...
  - github Pages
  - GitHub Codespace und Copilot
   - CI/CD und Automation
-
-
-
-
-
-
