@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+  }
+  
+  .node rect {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+  }
+
+  .value {
+    fill: #bfb;
+    stroke: steelblue;
+    stroke-width: 3px;
+  }
+  
+  .node text { font: 16px sans-serif; }
+  
+  .link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 2px;
+  }
+
+  .xml-tree-input-textarea-parse-error {
+    background-color: #ffcccb;
+  }
