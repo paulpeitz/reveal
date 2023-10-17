@@ -1,0 +1,106 @@
+/**
+ * A theme for reveal.js presentations at DHBW Karlsruhe, based on the simple theme.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../../node_modules/reveal.js/css/theme/template/mixins";
+@import "../../node_modules/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Lato', sans-serif;
+$mainFontSize: 25px;
+$mainColor: #000;
+$headingFont: 'News Cycle', Impact, sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: #e2001a;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../../node_modules/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+// reveal overwrites
+.reveal pre code {
+    font-size: 25px;
+    line-height: 1.2;
+}
+  
+.reveal pre {
+    width: fit-content;
+    max-width: 100%;
+}
+
+// additional styles
+#logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 20%;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.classic {
+    text-align: left;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.nolist {
+    list-style-type: none !important;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+ul.procon {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul.procon > li {
+    padding-left: 16px;
+}
+
+ul.procon > li::before {
+    padding-right: 8px;
+}
+
+ul.procon > li.pro::before {
+    content: "+";
+}
+
+ul.procon > li.con::before {
+    content: "-";
+}
