@@ -7,10 +7,10 @@
 --
 <!-- .slide: data-background-image="./img/arrow_cut.jpg"  data-background-opacity="0.2" -->
 
-# Lernziele <!-- .element: class="r-fit-text"  -->
+# Lernziele
 
-* Sie können XML Dateien erstellen. <!-- .element: class="r-fit-text"  -->
-* Sie können grundlegende DTDs erstellen. <!-- .element: class="r-fit-text"  -->
+* Sie können XML Dateien erstellen.
+* Sie können grundlegende DTDs erstellen.
 
 --
 <!-- .slide: data-background-image="img/library2.jpg" data-background-opacity="0.2" -->
