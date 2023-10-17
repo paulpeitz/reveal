@@ -5,7 +5,7 @@
 ## XML und DTD
 
 --
-<!-- .slide: data-background-image="./img/chain.jpg"  -->
+<!-- .slide: data-background-image="./img/chain.jpg"  data-background-opacity=0.2-->
 
 ## Lernziele
 
