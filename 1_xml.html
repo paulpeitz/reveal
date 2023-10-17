@@ -6,10 +6,12 @@
 
 		<title>SE 1 - XML</title>
 
-		<link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
-		<link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-		<link rel="stylesheet" href="assets/css/reveal_dhbw_ka.css">
-		<link rel="stylesheet" href="1_xml_xml_tree.css">
+    	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   	 <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    	<link rel="stylesheet" href="reveal.js/dist/theme/white.css">
+	<link rel="stylesheet" href="css/highlight/atom-one-light.css">
+	<link rel="stylesheet" href="css/customizations.css">
+	<link rel="stylesheet" href="css/fonts/fontawesome/css/fontawesome.min.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="node_modules/highlight.js/styles/github.css">
@@ -18,7 +20,8 @@
 		<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 	</head>
 	<body>
-		<img id="logo" src="assets/img/dhbw-ka.svg" alt="">
+    		<img id="logo" src="img/dhbw-ka.svg" alt="">
+		
 		<div class="reveal">
 			<div class="slides">
 				<section data-background-image="assets/img/architecture.jpg">
@@ -923,29 +926,33 @@
 			</div>
 		</div>
 
-		<script src="node_modules/reveal.js/dist/reveal.js"></script>
-		<script src="node_modules/reveal.js/plugin/zoom/zoom.js"></script>
-		<script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
-		<script src="node_modules/reveal.js/plugin/search/search.js"></script>
-		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
-		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{src: 'node_modules/reveal.js-d3js/d3js.js'},
-					{src: 'node_modules/d3/dist/d3.min.js'}
-				],
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/zoom/zoom.js"></script>
+    <script src="reveal.js/plugin/math/math.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
-			});
-		</script>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath.KaTeX ],
+        // Options which are passed into marked
+	// See https://marked.js.org/#/USING_ADVANCED.md#options
+	markdown: {
+		smartypants: true
+	}
+      });
+    </script>
+		
 		<!-- for the xml tree visualization -->
-		<script src="node_modules/d3/dist/d3.min.js"></script>
+		<script src="reveal.js/d3/dist/d3.min.js"></script>
 		<script src="1_xml_xml_tree.js"></script>		
 	</body>
 </html>
