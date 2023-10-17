@@ -1,14 +1,16 @@
 <!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity=0.2 -->
 
-# Ausgewählte Aspekte des Software-Engineering 2 <!-- .element: class="r-fit-text"  -->
+# Methoden und Werkzeuge in der Softwareentwicklung <!-- .element: class="r-fit-text"  -->
+
+## XML und DTD
 
 --
+<!-- .slide: data-background-image="./img/chain.jpg"  -->
 
-## Modulbeschreibung
+## Lernziele
 
-<p style="text-align: left; font-size: 0.6em;">In diesem Modul sollen aktuelle Themen des Software Engineerings aufgegriffen und den Studierenden vermittelt werden bzw. durch die Studierenden selbst erarbeitet werden. Es sollen Lehr- und Lerninhalte nach ihrer aktuellen Bedeutung (auch für die Partnerunternehmen) ausgewählt werden.</p> 
-
-<p style="text-align: left; font-size: 0.6em;">In der Lehreinheit 2 werden exemplarisch neue Ansätze der Modellierung, der Anforderungsanalyse, der Softwareentwicklung und des Projektmanagements sowie aktuelle und moderne Frameworks aufgegriffen</p>
+* Sie können XML Dateien erstellen.
+* Sie können grundlegende DTDs erstellen.
 
 --
 
