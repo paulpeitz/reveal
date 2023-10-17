@@ -15,7 +15,7 @@
 --
 <!-- .slide: data-background-image="img/library2.jpg" data-background-opacity="0.2" -->
 
-# Literatur <!-- .element: class="r-fit-text"  -->
+# Literatur
 
  * Webseiten des W3 – Konsortiums
    *  [W3.org](/www.w3.org):
