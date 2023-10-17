@@ -1,0 +1,16 @@
+<Buch titel="Grundkurs Programmieren in Java" jahr="2018">
+    <Autor> Dietmar Ratz </Autor>
+    <Kapitel titel="Einige Grundbegriffe">
+        <Subkapitel titel="Computer, Software">
+        </Subkapitel>
+        <Subkapitel titel="Was heißt Programmieren?">
+        </Subkapitel>
+    </Kapitel>
+    <Kapitel titel="Aller Anfang ist Schwer">
+        <Subkapitel titel="Mein erstes Programm">
+        </Subkapitel>
+        <Subkapitel>
+        </Subkapitel>
+    </Kapitel>
+    <Anhang/>
+</Buch>
