@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SE 1 - XML</title>
+
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="assets/css/reveal_dhbw_ka.css">
+		<link rel="stylesheet" href="1_xml_xml_tree.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="node_modules/highlight.js/styles/github.css">
+
+		<!-- Bootstrap icons -->
+		<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	</head>
+	<body>
+		<img id="logo" src="assets/img/dhbw-ka.svg" alt="">
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="assets/img/architecture.jpg">
+					<h1 class="r-fit-text">XML</h1>
+				</section>
+				<section data-background-image="assets/img/arrow_cut.jpg">
+					<h1>Lernziele</h1>
+					<ul>
+						<li><h2>Sie können XML Dateien erstellen.</h2></li>
+						<li><h2>Sie können grundlegende DTDs erstellen.</h2></li>
+					</ul>
+					<aside class="notes">
+						!!<br/>
+						Weitere Themen:<br/>
+						- XML-Schema<br/>
+						Xquery<br/>
+						Programmierschnittstellen DOM, SAX
+					</aside>
+				</section>
+				<section data-background-image="assets/img/library2.jpg" data-background-opacity="0.2">
+					<h1>Literatur</h1>
+					<ul>
+						<li>Webseiten des W3 – Konsortiums<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Link: <a href="http://www.w3.org">http://www.w3.org</a></li>
+						<li>Tutorials,  z.B.<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Link: <a href="http://www.w3schools.com">http://www.w3schools.com</a>, <a href="http://selfhtml.org">http://selfhtml.org</a></li>
+						<li>Bücher, z.B.<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Verhoegen, Helmut: Einstieg in XML. Bonn: Galileo Press GmbH.<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Sebestyen, Thomas J.: XML: Einstieg für Anspruchsvolle, Pearson Studium</li>
+					</ul>
+				</section>
+				<section data-background-image="assets/img/workplace.jpg">
+					<h1>Werkzeuge</h1>
+					<ul>
+						<li>Editoren und Darstellung, z.B.<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Jeder beliebige Editor und zur Darstellung ein Internet Browser<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;XML Notepad (Microsoft, kostenlos)<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Link: <a href="http://xmlgrid.net/">http://xmlgrid.net/</a>(Online XML Editor)</li>
+						<li>Validierung<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;W3C Validation Website, <a href="http://validator.w3.org">http://validator.w3.org</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Beispiel: Bestandteile eines Dokuments</h2>
+					<div class="r-stack">
+						<img class="fragment" src="assets/content/slide_1_2_0.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_1.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_2.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_3.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_4.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_5.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_6.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_7.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_8.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_2_9.png" alt="Beispiel">
+					</div>
+					<aside class="notes">
+						Formatierung = Layout<br/>
+						Markup: keine Erfindung des Internets, Wunsch in Büchern und anderen Druckerzeugnissen bestimmte Textpassagen vom üblichen Text abzuheben -> früher: Setzer benutzen Anmerkungen / Auszeichnungen = Markup am Rande des Manuskripts
+					</aside>
+				</section>
+				<section>
+					<h2>Beispiel: Struktur + Inhalt</h2>
+					<div class="r-stack">
+						<img class="fragment" src="assets/content/slide_1_3_0.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_3_1.png" alt="Beispiel">
+					</div>
+					<span class="fragment">Idee: William Tunnicliffe (1967)</span>
+					<aside class="notes">
+						Tunnicliffe: Trennung des (informationellen) Inhalts des Dokuments von seinem äußeren Format<br/>
+						<br/>
+						Strukturdefinition für eine Klasse von Dokumenten<br/>
+						Instanz enthält Struktur und Inhalt<br/>
+						<br/>
+						Vorteile:<br/>
+						<ul>
+							<li>Programm prüft, ob die Dokumente der vorgegebenen Struktur entsprechen -> Validierung</li>
+							<li>logische Strukturierung unterstützt weitere Anwendungen der Dokumentenverarbeitung, z. B. Kapitelnummerierung berechnen, Inhaltsverzeichnis oder Übersicht verwendeter Begriffe automatisch generieren.</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Beispiel: Formatierung (fiktiv) – style sheet</h2>
+					<p>
+						&lt;buch&gt;:DIN A4, linker Rand 2cm, rechter Rand 2,5cm<br/>
+						&lt;titel&gt;:Arial, 20pt, fett, linksbündig<br/>
+						&lt;zusammenfassung&gt;: drucke "Preface" in Arial, 14pt, fett, linksbündig;<br/>Times New Roman, 11pt, normal, linksbündig<br/>
+						&lt;teilüberschrift&gt;: Arial, 16pt, normal, linksbündig<br/>
+						&lt;überschrift&gt;: Arial, 14pt, fett, linksbündig drucke &lt;überschrift-nummer&gt;<br/>
+						&lt;abschnitt&gt;: Times New Roman, 11pt, normal, Blocksatz
+						…
+					</p>
+					<aside class="notes">
+						Style sheet -  Anweisungen oder Regeln, wie die Inhalte in einem strukturierten Dokument formatiert werden sollen<br/>
+						<br/>
+						Vorteile:<br/>
+						<ul>
+							<li>Verschiedene Dokumente mit ein- und demselben Stylesheet einheitlich formatieren.</li>
+							<li>Ein- und dasselbe Dokument durch Kombination mit verschiedenen Stylesheets passend zum Anwendungszweck formatieren.</li>
+							<li>parallel arbeiten: einer die Texte, ein anderer die Stylesheets.</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Begriffe</h2>
+					<ul style="margin-bottom: 2rem;">
+						<li class="fragment" data-fragment-index="1"><strong>Tag:</strong> Textmarkierungen (<span class="italic">markup</span>= dt. Auszeichnung)</li>
+						<li class="fragment" data-fragment-index="2"><strong>Element:</strong> hat öffnende und schließende Tags plus den Inhalt dazwischen
+							<ul>
+								<li>Elemente ohne Inhalt sind leere Elemente</li>
+								<li>HTML: es gibt auch Elemente ohne schließenden Tag und damit ohne Inhalt</li>
+							</ul>
+						</li>
+						<li class="fragment" data-fragment-index="3"><strong>Attribut:</strong> zusätzliche Eigenschaft des Elements</li>
+					</ul>
+					<div class="r-stack">
+						<img class="fragment" data-fragment-index="0" src="assets/content/slide_1_5_0.png" alt="Beispiel">
+						<img class="fragment" data-fragment-index="1" src="assets/content/slide_1_5_1.png" alt="Beispiel">
+						<img class="fragment" data-fragment-index="2" src="assets/content/slide_1_5_2.png" alt="Beispiel">
+						<img class="fragment" data-fragment-index="3" src="assets/content/slide_1_5_3.png" alt="Beispiel">
+					</div>
+					<aside class="notes">
+						Markup eine Folge von Zeichen, die an bestimmten Stellen in einem Dokument eingefügt werden, um die Form der Darstellung, des Druckes oder der Struktur der Dokumente zu beschreiben
+					</aside>
+				</section>
+				<section>
+					<h2>Standardisierung: SGML und DSSSL (ISO: 8879)</h2>
+					<div class="r-stack">
+						<img class="fragment" src="assets/content/slide_1_6_0.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_6_1.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_6_2.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_6_3.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_6_4.png" alt="Beispiel">
+						<img class="fragment" src="assets/content/slide_1_6_5.png" alt="Beispiel">
+					</div>
+					<aside class="notes">
+						1978-1986:  SGML (Standard Generalized <strong>Markup Language</strong>), Sprache zur Strukturdefinition von Dokumenten<br/>
+						sehr mächtig (ca. 400 Seiten Dokumentation)<br/>
+						zugehörige Formatierungssprache: <strong>DSSSL</strong> (Dynamic Style Sheet Specification Language)<br/>
+						<br/>
+						DTD – Strukturdefinition<br/>
+						Sprache zur Beschreibung der Strukturdefinition eines Dokuments<br/>
+						1986 als  ISO-Standard veröffentlicht<br/>
+						Metasprache zur Beschreibung von Auszeichnungssprachen (Markup-Sprachen)
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Einfaches Beispiel</h2>
+					<pre><code data-trim data-line-numbers><script type="text/template">
+						<Gedicht>
+							<Titel>Der Zauberlehrling</Titel>
+							<Strophe>
+								<Zeile>Hat der alte Hexenmeister</Zeile>
+								<Zeile>sich doch einmal wegbegeben!</Zeile>
+								...
+							</Strophe>
+							...
+						</Gedicht>
+					</script></code></pre>
+					<pre><code data-trim data-line-numbers><script type="text/template">
+						<!ELEMENT Gedicht (Titel, Strophe+)>
+						<!ELEMENT Titel (#PCDATA)>
+						<!ELEMENT Strophe (Zeile+)>
+						<!ELEMENT Zeile (#PCDATA)>
+					</script></code></pre>
+					<aside class="notes">
+						Korrektes SGML aber im Browser nicht darstellbar<br/>
+						-> Zweites Bsp HTML – erahnen wie unterschiedlich SGML sein kann
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Beispiel für eine berühmte DTD: <strong>HTML</strong></h2>
+					<ul>
+						<li>Bei Erfindung des Web:<br/>Web-Seiten (deren Struktur) müssen beschrieben werden</li>
+						<li>Verwendung von SGML für diesen Zweck</li>
+						<li>Die entsprechende Dokumenttyp-Beschreibung (DTD) wurde HTML genannt (HTML = <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)</li>
+						<li>HTML wurde im Laufe der Zeit stark "missbraucht": nicht nur Beschreibung der Struktur, sondern auch Formatierungsinformationen!</li>
+						<br/>
+						<li><strong>Historie:</strong>
+							<ul>
+								<li>
+									1995: Browserkrieg zwischen Netscape, Microsoft, SUN etc.
+									<ul>
+										<li>In schneller Folge wurden neue Versionen von HTML definiert</li>
+										<li>Resultat: Definition stabiler Versionen durch die Organisation WWW-Consortium(W3C): HTML 3.2 (1996), HTML 4.0 (1997)</li>
+									</ul>
+								</li>
+								<li>Aktuell: HTML5</li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Entwurfsziel: möglichst einfache Sprache</li>
+							<li>Eine Datei mit HTML-Text ist (bzw. war) eine einfache Textdatei</li>
+							<li>Erstellung mit einem üblichen Texteditor (z.B. mit Notepad, UltraEdit)</li>
+							<li>Ursprünglich hatte HTML nur einige wenige einfache Textmarkierungen (Tags).</li>
+							<li>Hypertextsprache, in der Text mit Querverweisen durchmischt wird</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2 class="classic">XML</h2>
+					<p class="classic">
+						Ziel: vereinfachte Variante zu SGML und DSSSL fürs Web durch W3C<br/>
+						<i class="bi bi-arrow-return-right"></i> XML, XSL und CSS<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(XML = Extensible Markup Language,<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XSL = Extensible Style Language,<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS = Cascading Style Sheets)
+					</p>
+					<img src="assets/content/slide_1_10_0.png" alt="Beispiel">
+					<aside class="notes">
+						HTML begrenzt: Infos anzeigen, aber Verarbeitung nicht ohne weiteres möglich -> Trennung Inhalt und Layout<br/>
+						<br/>
+						1998 vom W3C 1.0 verabschiedet<br/>
+						<br/>
+						XML ist Teilmenge von SGML
+						<ul>
+							<li>jedes XML-Dokument ist auch SGML-Dokument</li>
+							<li>XML ist SGML für das Web</li>
+							<li>weiterhin mächtig</li>
+							<li>leichter zu benutzen</li>
+							<li>Vereinfacht Anwendungsentwicklung</li>
+						</ul>
+						Extensible Stylesheet Language (XSL): DSSSL ist der Vorläufer, Vorteil: XML Struktur, kann jeder lesen + Syntaxregeln<br/>
+						<br/>
+						CSS: Alternative zu XSL?, aber nur Formatierung, XSL kann auch Dokumente, wie Inhaltsverzeichnisse liefern, XSL kann auch CSS Ergebnisse erzeugen<br/>
+						<br/>
+						XML basierende Sprachen: SVG
+					</aside>
+				</section>
+				<section data-background-image="assets/img/architecture.jpg" data-background-opacity="0.3">
+					<h1><strong>XML - Überblick</strong></h1>
+					<h2 class="classic">
+						Was ist ein Dokument?<br/>
+						Struktur von XML-Dokumenten<br/>
+						Bestandteile von XML-Dokumenten<br/>
+						<br/>
+						DTDs (Document Type Definitions)
+					</h2>
+				</section>
+				<section>
+					<h2>Was ist ein Dokument?</h2>
+					<img src="assets/content/slide_1_13_0.png" alt="" style="height: 40vh;">
+					<aside class="notes">
+						Struktur -> logische Information (HTML: Überschriften, Zitate, Titel)<br/>
+						<ul>
+							<li>Typ des Dokuments</li>
+							<li>Bedeutung</li>
+							<li>Relationen</li>
+						</ul>
+						<br/>
+						Layout/Formatierung -> (audio-)visuelle Information -> physische Auszeichnung<br/>
+						<ul>
+							<li>Anordnung</li>
+							<li>Darstellungsweise</li>
+						</ul>
+						<br/>
+						Semantische Auszeichnung: Rückschlüsse auf Inhalte sind möglich
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Markup in XML (1)</h2>
+					<ul>
+						<li>Elemente definieren die Dokumentstruktur</li>
+						<li>Elemente müssen immer geschlossen werden</li>
+						<li>Elemente dürfen sich nicht überlappen</li>
+					</ul>
+					<div class="container">
+						<div class="col">
+							<pre><code data-trim data-line-numbers="2,5,7-8,11,12-15"><script type="text/template">
+								<Buch>
+									<Autor>    </Autor>
+									<Kapitel>
+										<Subkapitel>
+										</Subkapitel>
+										<Subkapitel>
+										</Subkapitel>
+									</Kapitel>
+									<Kapitel>
+										<Subkapitel>
+										</Subkapitel>
+										<Subkapitel>
+										</Subkapitel>
+									</Kapitel>
+									<Anhang>    </Anhang>
+								</Buch>
+							</script></code></pre>
+						</div>
+						<div class="col">
+							<img src="assets/content/slide_1_14_0.png" alt="">
+						</div>
+					</div>
+					<aside class="notes">
+						Elemente richtig verschachteln
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Markup in XML (2)</h2>
+					<ul>
+						<li>Text ergänzt Markup (Inhalt ergänzt Struktur)</li>
+					</ul>
+					<pre><code data-trim data-line-numbers="2"><script type="text/template">
+						<Buch>
+							<Autor> Dietmar Ratz </Autor>
+							<Kapitel>
+								<Subkapitel>
+								</Subkapitel>
+								<Subkapitel>
+								</Subkapitel>
+							</Kapitel>
+							<Kapitel>
+								<Subkapitel>
+								</Subkapitel>
+								<Subkapitel>
+								</Subkapitel>
+							</Kapitel>
+							<Anhang>    </Anhang>
+						</Buch>
+					</script></code></pre>
+				</section>
+				<section class="classic">
+					<h2>Markup in XML (3)</h2>
+					<ul>
+						<li>Elemente können Attribute mit Werten enthalten</li>
+					</ul>
+					<pre><code data-trim data-line-numbers="|1|3,9|4,6,10"><script type="text/template">
+						<Buch titel="Grundkurs Programmieren in Java" jahr="2018">
+							<Autor> Dietmar Ratz </Autor>
+							<Kapitel titel="Einige Grundbegriffe">
+								<Subkapitel titel="Computer, Software">
+								</Subkapitel>
+								<Subkapitel titel="Was heißt Programmieren?">
+								</Subkapitel>
+							</Kapitel>
+							<Kapitel titel="Aller Anfang ist Schwer">
+								<Subkapitel titel="Mein erstes Programm">
+								</Subkapitel>
+								<Subkapitel>
+								</Subkapitel>
+							</Kapitel>
+							<Anhang>    </Anhang>
+						</Buch>
+					</script></code></pre>
+					<aside class="notes">
+						Attribute enthalten auch Inhalt, können aber keine weiteren Elemente enthalten
+					</aside>
+				</section>
+				<section>
+					<h2>Darstellung im Browser</h2>
+					<img src="assets/content/deck_1_xml/Grundkurs_Programmieren_im_Browser.png" alt="" style="height: 40vh;">
+				</section>
+				<section>
+					<h2>Struktur eines XML-Dokuments</h2>
+					<pre><code data-trim data-line-numbers=2,4,7,10|1,2|4,5|7,8|10-15|><script type="text/template">
+						<?xml version="1.0" encoding="UTF-8"?>
+						<!-- XML-Deklaration ⤴ -->
+
+						<!-- Verarbeitungsanweisung (optional) -->
+						<?xml-stylesheet type="text/css" href="b.css"?>
+
+						<!-- Verweis auf DTD (optional) -->
+						<!DOCTYPE buch SYSTEM "buch.dtd">
+
+						<!-- XML - Daten (getaggter Text) -->
+						<Buch titel="Grundkurs Programmieren in Java" 
+						jahr="2018">
+						  <Autor> Dietmar Ratz </Autor>
+						  <Kapitel titel="Einige Grundbegriffe">
+						  </Kapitel>
+						</Buch>
+					</script></code></pre>
+					<aside class="notes">
+						Die 3 Zeilen vor den eigentlichen Daten heißen <strong>Prolog</strong>
+						<ul>
+							<li>
+								<strong>XML-Deklaration:</strong>
+								<ul>
+									<li>Version ist Pflicht. Die anderen in Reihenfolge. (Einsatz der Version 1.0 wird empfohlen, da die 1.1 nicht in allen Fällen rückwärtskompatibel ist.)</li>
+									<li>Encoding: Zeichenkodierung (empfohlen: UTF-8 (8-Bit Unicode Transformation Format))</li>
+									<li>Standalone: yes oder no
+										<ul>
+											<li>NO -> DTD innerhalb der DOC-TYPE-Deklaration angegeben, also gemeinsam mit der XML-Instanz gespeichert -> interne DTD</li>
+											<li>YES -> eigene Datei für DTD</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<strong>Verarbeitungsanweisung:</strong> für verarbeitende Programme
+							</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Text</h2>
+					<ul>
+						<li>beliebige Zeichen aus dem Unicode-Alphabet</li>
+						<br/>
+						<li>wenige verbotene Zeichen:
+							<ul class="nolist">
+								<li><code>&amp;lt;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;</code></li>
+								<li><code>&amp;amp;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&amp;</code></li>
+								<li><code>&amp;gt;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&gt;</code></li>
+								<li><code>&amp;apos;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'</li>
+								<li><code>&amp;quot;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</li>
+							</ul>
+						</li>
+						<br>
+						<li>andere durch Escape-Sequenzen, z.B.
+							<ul class="nolist">
+								<li><code>&amp;#32;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dezimale Codierung für Leerzeichen</li>
+								<li><code>&amp;#x20;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hexa-dezimale Codierung</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>Kommentare</h2>
+					<ul>
+						<li>Dürfen überall stehen, wo Text oder Elemente stehen dürfen</li>
+						<li>Werden vom Parser ignoriert</li>
+						<br/>
+						<li>eingeschlossen in
+							<ul class="nolist">
+								<li><code>&lt;!-- ... --&gt;</code></li>
+							</ul>
+						</li>
+						<br/>
+						<li>Beispiel:<br/>
+							<pre><code data-trim data-line-numbers><script type="text/template">
+								<p>
+									<!--Kommentar innerhalb eines p-Elements -->
+								</p>
+								<!--und außerhalb -->
+							</script></code></pre>
+						</li>
+					</ul>
+					<aside class="notes">
+						Außerhalb von TAGs
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>White Space - Leerraumzeichen</h2>
+					<ul>
+						<li>White Space = Leerzeichen, Tabs, Zeilenumbrüche</li>
+						<br/>
+						<li>grundsätzliche Behandlung:
+							<ul>
+								<li>innerhalb von Elementen darf "White Space" entfernt werden</li>
+								<li>"White Space" im Inhalt bleibt unverändert</li>
+							</ul>
+						</li>
+						<br/>
+						<li>spezielles Attribut <code>"xml:space"</code>
+							<ul>
+								<li><code>xml:space="preserve"</code>: White Space innerhalb von Elementen bleibt</li>
+								<img src="assets/content/slide_1_21_0.png" alt="">
+								<li><code>xml:space="default"</code>: ... kann entfernt werden</li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						"innerhalb von Elementen": bei Elementen, die wiederum Elemente enthalten (z.B. bei Einrückungen) wird der die inneren Elmente umgebende Whitespace ignoriert<br/>
+						Reagiert wie &lt;pre&gt; in HTML. Alle Leerzeichen bleiben entahlten
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>CDATA-Abschnitte (character data)</h2>
+					<ul>
+						<li>ermöglicht einfache Eingabe "verbotener" Zeichen</li>
+						<li>eingeschlossen in
+							<ul class="nolist">
+								<li><code>&lt;![CDATA[ ... ]]&gt;</code></li>
+							</ul>
+						</li>
+						<br/>
+						<li>Beispiel:
+							<ul class="nolist">
+								<li><strong><code>&lt;![CDATA[</code></strong></li>
+								<li><code>&nbsp;Die Zeichen &lt;, &gt;, &amp;, ' und " haben in</code></li>
+								<li><code>&nbsp;XML besondere Aufgaben.</code></li>
+								<li><code>&nbsp;Innerhalb von CDATA ist &lt;DAS&gt; kein Markup!</code></li>
+								<li><strong><code>]]&gt;</code></strong></li>
+							</ul>
+						</li>
+						<br/>
+						<li>innerhalb von <code>CDATA</code> ist alles erlaubt, außer dieser Zeichenfolge:
+							<ul class="nolist">
+								<li><code>]]&gt;</code></li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						Wird nicht geparsed, wird vom parser ignoriert
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Hierarchische Struktur einer XML Datei</h2>
+					<p>
+						Inhalt darstellbar als Baum
+					</p>
+					<pre><code data-trim data-line-numbers=1,10|1,2,5,6,9,10|><script type="text/template">
+						<Measurements Patient="Moritz">
+							<Data DATE="2022-10-01">
+								<Temp>37.5</Temp>
+								<Weight>58700</Weight>
+							</Data>
+							<Data DATE="2022-10-02">
+								<Temp>37.6</Temp>
+								<Weight>60000</Weight>
+							</Data>
+						</Measurements>
+					</script></code></pre>
+				</section>
+				<section class="classic">
+					<h2>Beispiel: Baumstruktur</h2>
+					<div class="container">
+						<div class="col" style="flex: 3;">
+							<svg id="xml-tree"></svg>
+						</div>
+						<div class="col">
+							<textarea id="xml-tree-input-textarea" 
+							          rows="15" cols="35" 
+									  style='font-size: 14px; border:0px dashed #f0f0f0f0;'
+									  oninput="popup2()">
+<Measurements Patient="Moritz">
+    <Data DATE="2022-10-01">
+        <Temp>37.5</Temp>
+        <Weight>58700</Weight>
+    </Data>
+    <Data DATE="2022-10-02">
+        <Temp>37.6</Temp>
+        <Weight>60000</Weight>
+    </Data>
+</Measurements>
+							  </textarea>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Beispiel Editor – XML Notepad</h2>
+					<img src="assets/content/deck_1_xml/moritz-xml-notepad.png" alt="">
+				</section>
+				<section data-background-image="assets/img/architecture.jpg" data-background-opacity="0.3">
+					<h1><strong>DTDs</strong></h1>
+					<h2>Document Type Definitions</h2>
+				</section>
+				<section class="classic">
+					<h2>Document Type Definition – DTD</h2>
+					<ul>
+						<li>Beschreibung der Dokumentstruktur</li>
+						<br/>
+						<li>für Klasse von Dokumenten</li>
+						<br/>
+						<li>legt fest:
+							<ul>
+								<li>Welche Elementtypen gibt es?</li>
+								<li>Welchen Inhalt haben sie?</li>
+								<li>Welche Attribute gibt es?</li>
+								<li>Welche Werte dürfen sie annehmen?</li>
+								<li>Welche (komplexeren) Bausteine werden zur Verfügung gestellt?</li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						-> Elementtypen – Tags<br/>
+						-> Inhalt: u.a. andere Elemente
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>Document Type Definition – DTD</h2>
+					Eine DTD ist eine Auflistung der möglichen<br/>
+					<br/>
+					<div class="container">
+						<div class="col">
+							<ul>
+								<li class="fragment" data-fragment-index="1">Elementtypen</li>
+								<li class="fragment" data-fragment-index="2">deren Beziehung zueinander (Verschachtelung)</li>
+								<br/>
+								<li class="fragment" data-fragment-index="4">deren Attribute</li>
+								<br/>
+								<li class="fragment" data-fragment-index="6">und von sogen. Entities (eine Art von Makro)</li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nolist">
+								<br/>
+								<br/>
+								<li class="fragment" data-fragment-index="3"><i class="bi bi-arrow-right"></i><code>&nbsp;ELEMENT</code></li>
+								<br/>
+								<li class="fragment" data-fragment-index="5"><i class="bi bi-arrow-right"></i><code>&nbsp;ATTLIST</code></li>
+								<br/>
+								<li class="fragment" data-fragment-index="7"><i class="bi bi-arrow-right"></i><code>&nbsp;ENTITY</code></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="classic">
+					<h2>DTD: Regeln für Elementnamen</h2>
+					<ul>
+						<li>Name muss mit Buchstaben oder "_" Unterstrich beginnen</li>
+						<li>Nach dem ersten Zeichen sind zusätzlich Zahlen, "-" Bindestrich und "." Punkt erlaubt</li>
+						<li>Keine Leerzeichen</li>
+						<li>Groß- und Kleinschreibung wird unterschieden</li>
+						<li>Namen dürfen nicht mit einer Kombination der Buchstaben "xml" beginnen</li>
+						<li>Zwischen dem Elementnamen und der öffnenden Klammer "&lt;" darf kein Leerzeichen stehen (vor der schließenden spitzen Klammer  "&gt;" darf ein Leerzeichen sein)</li>
+						<li>":" Doppelpunkte sollten nur mit Namensräumen verwendet werden</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>DTD: Regeln für Elementnamen</h2>
+					<small><ul>
+						<li>Name muss mit Buchstaben oder "_" Unterstrich beginnen</li>
+						<li>Nach dem ersten Zeichen sind zusätzlich Zahlen, "-" Bindestrich und "." Punkt erlaubt</li>
+						<li>Keine Leerzeichen</li>
+						<li>Groß- und Kleinschreibung wird unterschieden</li>
+						<li>Namen dürfen nicht mit einer Kombination der Buchstaben "xml" beginnen</li>
+						<li>Zwischen dem Elementnamen und der öffnenden Klammer "&lt;" darf kein Leerzeichen stehen (vor der schließenden spitzen Klammer  "&gt;" darf ein Leerzeichen sein)</li>
+						<li>":" Doppelpunkte sollten nur mit Namensräumen verwendet werden</li>
+					</ul></small>
+					<br/>
+					<br/>
+					<div class="container">
+						<div class="col">
+							<ul class="nolist">
+								<li>Sind folgende Elementnamen gültig?</li>
+								<li class="fragment" data-fragment-index="1"><code>&lt;name1&gt;</code></li>
+								<li class="fragment" data-fragment-index="3"><code>&lt;Name-1&gt;</code></li>
+								<li class="fragment" data-fragment-index="5"><code>&lt;Tennis Turnier&gt;</code></li>
+								<li class="fragment" data-fragment-index="7"><code>&lt;1Liste&gt;</code></li>
+								<li class="fragment" data-fragment-index="9"><code>&lt; Land &gt;</code></li>
+								<li class="fragment" data-fragment-index="11"><code>&lt;Name=xml&gt;</code></li>
+								<li class="fragment" data-fragment-index="13"><code>&lt;BahnTicket&gt;</code></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nolist">
+								<br/>
+								<li class="fragment" data-fragment-index="2"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;gültig</code></li>
+								<li class="fragment" data-fragment-index="4"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;gültig</code></li>
+								<li class="fragment" data-fragment-index="6"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nicht gültig</code></li>
+								<li class="fragment" data-fragment-index="8"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nicht gültig</code></li>
+								<li class="fragment" data-fragment-index="10"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nicht gültig</code></li>
+								<li class="fragment" data-fragment-index="12"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nicht gültig</code></li>
+								<li class="fragment" data-fragment-index="14"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;gültig</code></li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>&lt;Tennis Turnier&gt; - keine Leerzeichen</li>
+							<li>&lt;1Liste&gt;	- keine Zahlen am Anfang</li>
+							<li>&lt; Land &gt;	- keine Leerzeichen nach öffnender spitzer Klammer &lt;</li>
+							<li>&lt;Name=xml&gt; - kein Gleichheitszeichen erlaubt</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>DTD: Elementtyp-Deklaration</h2>
+					<ul>
+						<li>legt Namen und Inhalt von Elementen fest<br/>
+							<code><strong>&lt;!ELEMENT</strong> <span class="italic">Name Inhalt</span><strong>&gt;</strong></code>
+						</li>
+						<br/>
+						<li>Sequenz<br/>
+							<code>&lt;!ELEMENT Rezept (Titel, Zutaten, Zubereitung)&gt;</code>
+						</li>
+						<br/>
+						<li>Alternativen<br/>
+							<code>&lt;!ELEMENT Block (P | Table | IMG)&gt;</code>
+						</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>DTD: Elementtyp-Deklaration</h2>
+					<ul>
+						<li>Kardinalitäten 0..1, 1..*, 0..*<br/>
+							<code>0..1: &lt;!ELEMENT Name (Vorname, MidInitial?, Nachname)&gt;</code><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-return-right"></i> (<code>MidInitial</code> kommt <strong>höchstens</strong> einmal vor)<br/>
+							<br/>
+							<code>1..*: &lt;!ELEMENT Liste (Überschrift, Item+)&gt;</code><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-return-right"></i> (<code>Item</code> kommt <strong>mindestens</strong> einmal vor)<br/>
+							<br/>
+							<code>0..*: &lt;!ELEMENT StückListe (Artikel*)&gt;</code><br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-return-right"></i> (<code>Artikel</code> kommt beliebig oft vor (inkl. gar nicht))<br/>
+							<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-return-right"></i> alle Inhalte ohne Angabe der Kardinalität kommen <strong>genau</strong> einmal vor
+						</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>DTD: Elementtyp-Deklaration</h2>
+					<ul>
+						<li>Text als Inhalt (<strong>P</strong>arsed <strong>C</strong>haracter <strong>DATA</strong>)<br/>
+							<code>&lt;!ELEMENT Vorname <strong>(#PCDATA)</strong>&gt;</code>
+						</li>
+						<br/>
+						<li>gemischter Inhalt<br/>
+							<code>&lt;!ELEMENT P (#PCDATA <strong>|</strong> EM <strong>|</strong> (B, A)+)*&gt;</code>
+						</li>
+						<br/>
+						<li>beliebiger Inhalt<br/>
+							<code>&lt;!ELEMENT Div <strong>ANY</strong>&gt;</code>
+						</li>
+						<br/>
+						<li>leere Elemente<br/>
+							<code>&lt;!ELEMENT HR <strong>EMPTY</strong>&gt;</code>
+						</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>DTD: Attributlisten-Deklaration</h2>
+					<ul>
+						<li>definiert
+							<ul>
+								<li>Zugehörigkeit zu einem Elementtyp</li>
+								<li>Attributnamen</li>
+								<li>Typ der Attributwerte</li>
+								<li>Default-Werte</li>
+							</ul>
+						</li>
+					</ul>
+					<pre><code data-trim data-line-numbers><script type="text/template">
+						<!ATTLIST Elementname Attributliste>
+						
+						<!ATTLIST Rezept
+							Quelle              CDATA    #IMPLIED
+							Personen            CDATA    #REQUIRED
+							Zubereitungszeit    CDATA    #IMPLIED>
+
+						<!ATTLIST H1
+							id       ID                   #IMPLIED
+							align    (left|center|right)  "left">
+					</script></code></pre>
+					<aside class="notes">
+						<ul>
+							<li>IMPLIED -> Optional</li>
+							<li>REQUIRED -> Müssen</li>
+						</ul>
+						<br/>
+						CDATA – ohne parsen, Parser ignoriert Sonderzeichen, sinnvoll wenn Text viele enthält, schneller zu übertragen
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>DTD: Attributlisten-Deklaration</h2>
+					Mögliche Attribut-Typen:<br/>
+					<br/>
+					<ul>
+						<li>CDATA: Zeichenkette</li>
+						<li>ID: eindeutiger Name innerhalb eines Dokuments</li>
+						<li>IDREF: Referenz auf ein Element mit ID</li>
+						<li>IDREFS: Liste von IDREFs</li>
+						<li>ENTITY: Name eines vordefinierten externen Entities</li>
+						<li>ENTITIES: Liste von ENTITYs</li>
+						<li>NMTOKEN: ein Name (als Token)</li>
+						<li>NMTOKENS: Liste von Namen (Token)</li>
+						<li>Aufzählung</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>nur ein ID-Attribut je Element; dieses muss IMPLIED oder REQUIRED sein</li>
+							<li>IDREF: ermöglicht eine Referenz auf Inhalte, damit diese nicht wiederholt werden müssen, Attributwert muss gleich einer ID sein</li>
+							<li>ENTITY-Attribute dürfen ein an anderer Stelle in der DTD deklariertes Entity referenzieren, Entities erlauben den Einsatz von Textbausteinen -> &and;nbsp;</li>
+							<li>NMTOKEN behandelt Attribut-Werte nicht als String, sondern als eigenständiges Token (Menge der Token ist offen)</li>
+							<li>NMTOKEN erlaub auch Namen mit führenden Ziffern</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>DTD: Beispiel</h2>
+					<pre><code data-trim data-line-numbers><script type="text/template">
+						<!--DTD für Fieberkurve -->
+							<!ELEMENT Messwerte (Data)+>
+							<!ATTLIST Messwerte Patient CDATA #REQUIRED>
+							<!ELEMENT Data (Temp, Weight)>
+							<!ATTLIST Data DATE CDATA #REQUIRED>
+							<!ELEMENT Temp(#PCDATA)>
+							<!ELEMENT Weight(#PCDATA)>
+					</script></code></pre>
+					<br/>
+					<span class="fragment">... eine valide XML-Datei
+					<pre><code data-trim data-line-numbers><script type="text/template">
+						<Messwerte Patient="Moritz">
+							<Data DATE="2022-10-01">
+								<Temp>37.5</Temp>
+								<Weight>58700</Weight>
+							</Data><Data DATE="2022-10-02">
+								<Temp>37.6</Temp>
+								<Weight>60000</Weight>
+							</Data>
+						</Messwerte>
+					</script></code></pre></span>
+				</section>
+				<section class="classic">
+					<h2>DTD einbinden</h2>
+					XML-Dokument/Instanz verweist auf seine DTD
+					<ul>
+						<li>Extern (referenziert über URI)<br/>
+							<code><strong>&lt;!DOCTYPE</strong> Messwerte SYSTEM "werte.dtd"<strong>&gt;</strong><br/>
+							<strong>&lt;!DOCTYPE</strong> html <span class="fragment" style="color:blue;"><strong><i class="bi bi-arrow-left"></i></strong> Root</span><br/>
+							&nbsp;&nbsp;PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;"xhtml1-strict.dtd"<strong>&gt;</strong></code>
+						</li>
+						<br/>
+						<li>Intern (innerhalb des XML-Dokuments)<br/>
+							<code><strong>&lt;!DOCTYPE</strong> List [<br/>
+							&nbsp;&nbsp;&lt;!ELEMENT List (Item)*&gt;<br/>
+							&nbsp;&nbsp;&lt;!ELEMENT Item (#PCDATA)&gt;<br/>
+							]<strong>&gt;</strong></code>
+						</li>
+					</ul>
+					<aside class="notes">
+						das erste Wort nach DOCTYPE ist der Name des Root-Elements dieser Dokumentklasse<br/>
+						<br/>
+						bei DOCTYPE "PUBLIC" gibt die erste URI eine "bekannte" DTD an, die das Werkzeug selbständig finden kann (ist dies doch nicht möglich, so ist eine zweite URI anzugeben, die direkt auf die DTD zeigt)
+					</aside>
+				</section>
+				<section class="classic">
+					<h2>DTD: Nachteile</h2>
+					<ul>
+						<li>eine DTD ist selber kein XML-Dokument<br/>
+							(gesonderte Syntax; Erbe von SGML)
+						</li>
+						<br/>
+						<li>Wiederverwendung bzw. Erweiterung ist schwierig
+							<ul>
+								<li>keine Möglichkeit nur einen Teil einer DTD zu verwenden</li>
+								<li>kein Vererbungsmechanismus</li>
+							</ul>
+						</li>
+						<li>keine Datentypen im eigentlichen Sinne</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>XML: Wohlgeformt und Gültigkeit</h2>
+					Dokument ist ...<br/>
+					<br/>
+					<ul>
+						<li><strong>wohlgeformt (well-formed)</strong>
+							<ul>
+								<li>genügt der XML-Syntax</li>
+								<li>genau ein Wurzel-Element</li>
+								<li>korrekte Schachtelung</li>
+								<li>keine DTD notwendig</li>
+							</ul>
+						</li>
+						<br/>
+						<li class="fragment"><strong>gültig (valid)</strong>
+							<ul>
+								<li>Dokument ist wohlgeformt</li>
+								<li>enthält DocumentType Declaration</li>
+								<li>es existiert DTD</li>
+								<li>Inhalt entspricht dieser DTD</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="classic">
+					<h2>Übung: wohlgeformt oder nicht?</h2>
+					<div class="container">
+						<div class="col" style="flex: 5;">
+							<ul class="nolist">
+								<li class="fragment" data-fragment-index="1"><code>&lt;student matrikelnummer=123456&gt;&lt;/student&gt;</code></li>
+								<li class="fragment" data-fragment-index="3"><code>&lt;student matrikel-nummer='123456'&gt;&lt;/student&gt;</code></li>
+								<li class="fragment" data-fragment-index="5"><code>&lt;student matrikel-nummer="123456"&gt;&lt;/student&gt;</code></li>
+								<li class="fragment" data-fragment-index="7"><code>&lt;student matrikel-nummer="123456" studiengang='Informatik'&gt;&lt;/student&gt;</code></li>
+								<li class="fragment" data-fragment-index="9"><code>&lt;dhbw standort="Karlsruhe" standort="www.dhbw-karlsruhe.de"&gt;&lt;/dhbw&gt;</code></li>
+								<li class="fragment" data-fragment-index="11"><code>&lt;buch titel="kurz &amp; gut"&gt;&lt;/buch&gt;</code></li>
+								<li class="fragment" data-fragment-index="13"><code>&lt;buch Titel="XML"&gt;&lt;/buch&gt;</code></li>
+								<li class="fragment" data-fragment-index="15"><code>&lt;buch xml-thema="ja"&gt;&lt;/buch&gt;</code></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nolist">
+								<li class="fragment" data-fragment-index="2"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nein</code></li>
+								<li class="fragment" data-fragment-index="4"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;ja</code></li>
+								<li class="fragment" data-fragment-index="6"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;ja</code></li>
+								<br/>
+								<li class="fragment" data-fragment-index="8"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;ja</code></li>
+								<br/>
+								<li class="fragment" data-fragment-index="10"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nein</code></li>
+								<li class="fragment" data-fragment-index="12"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nein</code></li>
+								<li class="fragment" data-fragment-index="14"><i class="bi bi-check-circle-fill success"></i><code>&nbsp;ja</code></li>
+								<li class="fragment" data-fragment-index="16"><i class="bi bi-x-circle-fill error"></i><code>&nbsp;nein</code></li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>Anführungszeichen fehlen</li>
+							<li>Attributnamen müssen eindeutig sein</li>
+							<li>&amp; muss maskiert sein</li>
+							<li>"xml" ist auch in Attributnamen nicht erlaubt</li>
+						</ul>
+						<br/>
+						!! Übungsblatt DTD + xml-Datei abgleichen – Fehler finden
+					</aside>
+				</section>
+				<section data-background-image="assets/img/questions.jpg">
+				</section>
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="node_modules/reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="node_modules/reveal.js/plugin/search/search.js"></script>
+		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{src: 'node_modules/reveal.js-d3js/d3js.js'},
+					{src: 'node_modules/d3/dist/d3.min.js'}
+				],
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+		<!-- for the xml tree visualization -->
+		<script src="node_modules/d3/dist/d3.min.js"></script>
+		<script src="1_xml_xml_tree.js"></script>		
+	</body>
+</html>
