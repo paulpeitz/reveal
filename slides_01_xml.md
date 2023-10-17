@@ -1,13 +1,13 @@
-<!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity="0.2" -->
 
 # Methoden und Werkzeuge in der Softwareentwicklung <!-- .element: class="r-fit-text"  -->
 
 ## XML und DTD
 
 --
-<!-- .slide: data-background-image="./img/arrow_cut.jpg"  data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/arrow_cut.jpg"  data-background-opacity="0.2" -->
 
-## Lernziele
+# Lernziele <!-- .element: class="r-fit-text"  -->
 
 * Sie können XML Dateien erstellen.
 * Sie können grundlegende DTDs erstellen.
@@ -15,7 +15,7 @@
 --
 <!-- .slide: data-background-image="img/library2.jpg" data-background-opacity="0.2" -->
 
-## Literatur
+# Literatur <!-- .element: class="r-fit-text"  -->
 
  * Webseiten des W3 – Konsortiums
    *  [W3.org](/www.w3.org):
