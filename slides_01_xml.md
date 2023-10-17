@@ -5,7 +5,7 @@
 ## XML und DTD
 
 --
-<!-- .slide: data-background-image="./img/chain.jpg"  data-background-opacity=0.2-->
+<!-- .slide: data-background-image="./img/arrow_cut.jpg"  data-background-opacity=0.2 -->
 
 ## Lernziele
 
@@ -13,12 +13,13 @@
 * Sie können grundlegende DTDs erstellen.
 
 --
+<!-- .slide: data-background-image="img/library2.jpg" data-background-opacity="0.2" -->
 
-## Ablauf
+## Literatur
 
- * Kickoff und Themenvergabe
-   * Vorlesungskonzept: Lernen durch Lehren
- * 8 Vorlesungstermine
+ * Webseiten des W3 – Konsortiums
+   *  [W3.org](/www.w3.org):
+ * Tutorials,  z.B.
    * Gestaltung eines Veranstaltungstermins
    * 3-4 Studierende pro Gruppe
    * Präsentation, Demo, Übung
