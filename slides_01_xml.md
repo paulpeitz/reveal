@@ -9,8 +9,8 @@
 
 # Lernziele <!-- .element: class="r-fit-text"  -->
 
-* Sie können XML Dateien erstellen.
-* Sie können grundlegende DTDs erstellen.
+* Sie können XML Dateien erstellen. <!-- .element: class="r-fit-text"  -->
+* Sie können grundlegende DTDs erstellen. <!-- .element: class="r-fit-text"  -->
 
 --
 <!-- .slide: data-background-image="img/library2.jpg" data-background-opacity="0.2" -->
