@@ -20,25 +20,16 @@
  * Webseiten des W3 – Konsortiums
    *  [W3.org](/www.w3.org):
  * Tutorials,  z.B.
-   * Gestaltung eines Veranstaltungstermins
-   * 3-4 Studierende pro Gruppe
-   * Präsentation, Demo, Übung
-   * Abgabe der Materialien per Mail
-* Klausur
-   * Besteht aus Inhalten der Präsentationen
-   * Dauer 75 Minuten
+ * Weiterführende Infos
+   * Kommen noch
 
 --
 
-## Lernen durch Lehre
+## Datenaustausch in heterogenen Landschaften
 
-<p style="text-align: left; font-size: 0.6em;">Ist eine handlungsorientierte und konstruktivistische Lernmethode, bei der sich Studierende einen bestimmten Vorlesungsinhalt selbstständig aneignen und im Anschluss ihren Kommilitonen vermitteln.</p>
+Daten sollen zwischen unterschiedlichen Systemen ausgetauscht werden, welche Probleme treten dabei auf?
 
-<p style="text-align: left; font-size: 0.6em;">Die Studierenden prüfen außerdem mit Hilfe von selbstgewählten und geeigneten Übungen, ob die Studierende die Informationen wirklich verstanden haben.</p>
-
-<p style="text-align: left; font-size: 0.6em;">Die Studierenden entwickeln, fördern und stärken vor allem kognitive Fähigkeiten und soziale Kompetenzen. Hierzu zählen Systemdenken und das Vermögen Wesentliches von Unwesentlichem zu unterscheiden sowie Teamfähigkeit und Kommunikationsfähigkeit.</p>
-
-<p style="text-align: left; font-size: 0.6em;">Hierbei geht es jedoch nicht um eine umfassende Grundlagenforschung, sondern vielmehr um das Vermitteln von fachspezifischen und berufsangewandten Kenntnissen. Gerade in der vorherrschenden Informationsgesellschafft, gilt es permanent die Informationsströme zu kanalisieren, wichtiges Wissen zu filtern und auf konkrete Einsatzgebiete sinnvoll anzuwenden.</p>
+Lösung sind Standards: XML oder auch JSON
 
 --
 
