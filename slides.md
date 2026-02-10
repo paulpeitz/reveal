@@ -1,6 +1,6 @@
 <!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity=0.2 -->
 
-# Identity and Access Management <!-- .element: class="r-fit-text"  -->
+# Identity and Access Management (IAM)<!-- .element: class="r-fit-text"  -->
 
 --
 
@@ -19,7 +19,7 @@
 
 ## Identity & Access Management (IAM)
 
-<p style="text-align: left; font-size: 0.6em;">IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.</p>
+IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.
 
 --
 
@@ -39,21 +39,29 @@
 
 --
 
-## Mögliche Themen
+# Authentifizierung<!-- .element: class="r-fit-text"  -->
 
-* Cloud Native Development
-* UX und Prototyping (Figma)
-* Internet of Things und Edge Computing
-* Blockchain
-* Test Driven Development
-* Low Code / No Code
-* Code Qualität
-* GitHub
+## Wer sind Sie?<!-- .element: class="r-fit-text"  -->
+
+
 
 --
 
 <!-- .slide: data-background-image="./img/cloud.jpg" -->
-## Cloud Native Development
+## Grundlagen der Authentifizierung
+
+Die drei Faktoren der Authentifizierung:
+
+* Wissen: Etwas, das Sie wissen (Passwort, PIN).
+* Besitz: Etwas, das Sie haben (Smartphone, USB-Token, Smartcard).
+* Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
+
+Wichtig: Faktoren können/sollten kombiniert werden
+
+
+
+--
+## Temp 
 
 <div class="left">
 
