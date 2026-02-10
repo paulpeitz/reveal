@@ -69,11 +69,10 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 ## Passwörter - Menschliche Schwächen 1
 
 * Geringe Entropie (Schwache Passwörter)
-  * Menschen neigen dazu, sich Passwörter auszudenken, die leicht zu merken sind:
-    * Gängige Wörter ("Passwort", "Sonne")
-    * Sequenzen ("123456", "qwertz")
-    * Persönliche Daten (Geburtstage, Namen von Kindern oder Haustieren)
-    * Keine/Wenige Sonderzeichen
+  * Gängige Wörter ("Passwort", "Sonne")
+  * Sequenzen ("123456", "qwertz")
+  * Persönliche Daten (Geburtstage, Namen von Kindern oder Haustieren)
+  * Keine/Wenige Sonderzeichen
 
 * Passwort-Wiederverwendung (Password Reuse)
   * Benutzer verwenden dasselbe (oft schwache) Passwort für Dutzende verschiedene Dienste. 
