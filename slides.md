@@ -73,17 +73,19 @@ Wichtig: Faktoren können/sollten kombiniert werden
 * Das Passwort ist ein Single Point of Failure, der auf Geheimhaltung basiert. 
 * Sobald dieses Geheimnis – sei es durch Raten, Phishing oder Leaks – preisgegeben wird, ist die Authentifizierung gebrochen.
 
+
 --
 
 ## Passwörter - Menschliche Schwächen 1
 
+<div class="left">
 Geringe Entropie (Schwache Passwörter): Menschen neigen dazu, sich Passwörter auszudenken, die leicht zu merken sind. Diese sind jedoch auch leicht zu erraten. Dazu gehören:
 * Gängige Wörter ("Passwort", "Sonne")
 * Sequenzen ("123456", "qwertz")
 * Persönliche Daten (Geburtstage, Namen von Kindern oder Haustieren)
 
 Passwort-Wiederverwendung (Password Reuse): Benutzer verwenden dasselbe (oft schwache) Passwort für Dutzende verschiedene Dienste. Wird nur ein dieser Dienste kompromittiert, können Angreifer diese Anmeldedaten bei vielen anderen Diensten ausprobieren (siehe "Credential Stuffing").
-
+</div>
 
 --
 ## Temp 
