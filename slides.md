@@ -4,7 +4,7 @@
 
 --
 
-## Agenda
+# Agenda
 
 * Identity & Access Management (IAM)
 * Grundlagen: Authentifizierung vs. Autorisierung
@@ -17,15 +17,15 @@
 
 --
 
-## Identity & Access Management (IAM)
+# Identity & Access Management (IAM)
 
-<p style="text-align: left; font-size: 1.6em;">
+<p style="text-align: left; font-size: 1.2em;">
 IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.
 </p>
 
 --
 
-## Grundlagen: Authentifizierung vs. Autorisierung
+# Grundlagen: Authentifizierung vs. Autorisierung
 
 * Authentifizierung (AuthN): Wer sind Sie?
   * Der Prozess der Überprüfung einer Identität.
