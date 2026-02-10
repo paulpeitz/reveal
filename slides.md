@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity=0.2 -->
+<!-- .slide: data-background-image="./img/chain.jpg" data-background-opacity=0.2 -->
 
 # Identity and Access Management (IAM)<!-- .element: class="r-fit-text"  -->
 
@@ -19,7 +19,7 @@
 
 ## Identity & Access Management (IAM)
 
-IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.
+<p style="text-align: left;" class="r-fit-text">IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.</p>
 
 --
 
