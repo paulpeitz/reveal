@@ -25,7 +25,7 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 
 --
 
-# Grundlagen: Authentifizierung vs. Autorisierung
+## Grundlagen: Authentifizierung vs. Autorisierung
 
 * Authentifizierung (AuthN): Wer sind Sie?
   * Der Prozess der Überprüfung einer Identität.
@@ -49,16 +49,17 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 
 --
 
-<!-- .slide: data-background-image="./img/cloud.jpg" -->
 ## Grundlagen der Authentifizierung
 
 <div class="right-text r-fit-text">
 Die drei Faktoren der Authentifizierung:
+</div>
 
 * Wissen: Etwas, das Sie wissen (Passwort, PIN).
 * Besitz: Etwas, das Sie haben (Smartphone, USB-Token, Smartcard).
 * Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
 
+<div class="right-text r-fit-text">
 Wichtig: Faktoren können/sollten kombiniert werden
 </div>
 
