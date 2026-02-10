@@ -51,6 +51,7 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 <!-- .slide: data-background-image="./img/cloud.jpg" -->
 ## Grundlagen der Authentifizierung
 
+<div class="right-text r-fit-text">
 Die drei Faktoren der Authentifizierung:
 
 * Wissen: Etwas, das Sie wissen (Passwort, PIN).
@@ -58,7 +59,7 @@ Die drei Faktoren der Authentifizierung:
 * Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
 
 Wichtig: Faktoren können/sollten kombiniert werden
-
+</div>
 
 
 --
