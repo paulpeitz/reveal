@@ -55,11 +55,11 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 Die drei Faktoren der Authentifizierung:
 </p>
 
-<p style="text-align: left; font-size: 1.2em;">
+<div class="left">
 * Wissen: Etwas, das Sie wissen (Passwort, PIN).
 * Besitz: Etwas, das Sie haben (Smartphone, USB-Token, Smartcard).
 * Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
-</p>
+</div>
 
 <p style="text-align: left; font-size: 1.2em;">
 Wichtig: Faktoren können/sollten kombiniert werden
