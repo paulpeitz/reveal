@@ -55,13 +55,34 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 Die drei Faktoren der Authentifizierung:
 </div>
 
+<div class="left">
 * Wissen: Etwas, das Sie wissen (Passwort, PIN).
 * Besitz: Etwas, das Sie haben (Smartphone, USB-Token, Smartcard).
 * Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
+</div>
 
 <div class="right-text r-fit-text">
 Wichtig: Faktoren können/sollten kombiniert werden
 </div>
+
+--
+
+## Wissen - Passwörter
+
+* Passwörter sind der "klassische" Authentifizierungsfaktor: Wissen
+* Das Passwort ist ein Single Point of Failure, der auf Geheimhaltung basiert. 
+* Sobald dieses Geheimnis – sei es durch Raten, Phishing oder Leaks – preisgegeben wird, ist die Authentifizierung gebrochen.
+
+--
+
+## Passwörter - Menschliche Schwächen 1
+
+Geringe Entropie (Schwache Passwörter): Menschen neigen dazu, sich Passwörter auszudenken, die leicht zu merken sind. Diese sind jedoch auch leicht zu erraten. Dazu gehören:
+* Gängige Wörter ("Passwort", "Sonne")
+* Sequenzen ("123456", "qwertz")
+* Persönliche Daten (Geburtstage, Namen von Kindern oder Haustieren)
+
+Passwort-Wiederverwendung (Password Reuse): Benutzer verwenden dasselbe (oft schwache) Passwort für Dutzende verschiedene Dienste. Wird nur ein dieser Dienste kompromittiert, können Angreifer diese Anmeldedaten bei vielen anderen Diensten ausprobieren (siehe "Credential Stuffing").
 
 
 --
@@ -85,21 +106,7 @@ Cloud-native Computing ist ein Ansatz in der Softwareentwicklung, der Cloud Comp
 <!-- .slide: data-background-image="./img/ui2.jpg" -->
 
 ## UX und Prototypting
-
-<div class="left">
-
-- Definition von UX und seine Rolle im Entwicklungsprozess
-- Prototyping zur Verbesserung der UX
-- Vorstellung Figma
-
-</div>
-  
-<div class="right">
-
- ![Figma](./img/figma1.webp):
-  
-</div>  
-  
+ 
 --
 
 <!-- .slide: data-background-image="./img/iot.jpg" -->
