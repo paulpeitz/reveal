@@ -51,17 +51,13 @@ IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherste
 
 ## Grundlagen der Authentifizierung
 
-<p style="text-align: left; font-size: 1.2em;">
 Die drei Faktoren der Authentifizierung:
-</p>
 
 * Wissen: Etwas, das Sie wissen (Passwort, PIN).
 * Besitz: Etwas, das Sie haben (Smartphone, USB-Token, Smartcard).
 * Sein (Inhärenz): Etwas, das Sie sind (Fingerabdruck, Gesichtsscan, Iris).
 
-<p style="text-align: left; font-size: 1.2em;">
 Wichtig: Faktoren können/sollten kombiniert werden
-</p>
 
 --
 
@@ -76,14 +72,13 @@ Wichtig: Faktoren können/sollten kombiniert werden
 
 ## Passwörter - Menschliche Schwächen 1
 
-<div class="left">
 Geringe Entropie (Schwache Passwörter): Menschen neigen dazu, sich Passwörter auszudenken, die leicht zu merken sind. Diese sind jedoch auch leicht zu erraten. Dazu gehören:
 * Gängige Wörter ("Passwort", "Sonne")
 * Sequenzen ("123456", "qwertz")
 * Persönliche Daten (Geburtstage, Namen von Kindern oder Haustieren)
 
-Passwort-Wiederverwendung (Password Reuse): Benutzer verwenden dasselbe (oft schwache) Passwort für Dutzende verschiedene Dienste. Wird nur ein dieser Dienste kompromittiert, können Angreifer diese Anmeldedaten bei vielen anderen Diensten ausprobieren (siehe "Credential Stuffing").
-</div>
+Passwort-Wiederverwendung (Password Reuse): Benutzer verwenden dasselbe (oft schwache) Passwort für Dutzende verschiedene Dienste. 
+Wird nur ein dieser Dienste kompromittiert, können Angreifer diese Anmeldedaten bei vielen anderen Diensten ausprobieren (siehe "Credential Stuffing").
 
 --
 ## Temp 
