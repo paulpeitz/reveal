@@ -1,41 +1,41 @@
 <!-- .slide: data-background-image="./img/architecture.jpg" data-background-opacity=0.2 -->
 
-# Identity and Access Management <!-- .element: class="r-fit-text"  -->
+# Ausgewählte Aspekte des Software-Engineering 2 <!-- .element: class="r-fit-text"  -->
 
 --
 
-## Agenda
+## Modulbeschreibung
 
-* Identity & Access Management (IAM)
-* Grundlagen: Authentifizierung vs. Autorisierung
-* Authentifizierung (1): Passwörter und ihre Schwächen
-* Authentifizierung (2): 2-Faktor-Authentifizierung (2FA)
-* Authentifizierung (3): FIDO2
-* Passkeys statt Passwörter
-* Autorisierung (1): Berechtigungsmanagement
-* Autorisierung (2): Single Sign-On (SSO)
+<p style="text-align: left; font-size: 0.6em;">In diesem Modul sollen aktuelle Themen des Software Engineerings aufgegriffen und den Studierenden vermittelt werden bzw. durch die Studierenden selbst erarbeitet werden. Es sollen Lehr- und Lerninhalte nach ihrer aktuellen Bedeutung (auch für die Partnerunternehmen) ausgewählt werden.</p> 
+
+<p style="text-align: left; font-size: 0.6em;">In der Lehreinheit 2 werden exemplarisch neue Ansätze der Modellierung, der Anforderungsanalyse, der Softwareentwicklung und des Projektmanagements sowie aktuelle und moderne Frameworks aufgegriffen</p>
 
 --
 
-## Identity & Access Management (IAM)
+## Ablauf
 
-<p style="text-align: left; font-size: 0.6em;">IAM ist das Framework aus Richtlinien, Prozessen und Technologien, das sicherstellt, dass die richtigen Entitäten (Benutzer oder Systeme) den richtigen Zugriff auf die richtigen Ressourcen (Daten, Anwendungen) zur richtigen Zeit und aus den richtigen Gründen erhalten.</p>
+ * Kickoff und Themenvergabe
+   * Vorlesungskonzept: Lernen durch Lehren
+ * 8 Vorlesungstermine
+   * Gestaltung eines Veranstaltungstermins
+   * 3-4 Studierende pro Gruppe
+   * Präsentation, Demo, Übung
+   * Abgabe der Materialien per Mail
+* Klausur
+   * Besteht aus Inhalten der Präsentationen
+   * Dauer 75 Minuten
 
 --
 
-## Grundlagen: Authentifizierung vs. Autorisierung
+## Lernen durch Lehre
 
-* Authentifizierung (AuthN): Wer sind Sie?
-  * Der Prozess der Überprüfung einer Identität.
-  * Der Benutzer beweist, dass er derjenige ist, für den er sich ausgibt.
-  * Analogie: Das Vorzeigen Ihres Personalausweises an der Tür.
+<p style="text-align: left; font-size: 0.6em;">Ist eine handlungsorientierte und konstruktivistische Lernmethode, bei der sich Studierende einen bestimmten Vorlesungsinhalt selbstständig aneignen und im Anschluss ihren Kommilitonen vermitteln.</p>
 
-* Autorisierung (AuthZ): Was dürfen Sie tun?
-  * Der Prozess der Gewährung oder Verweigerung von Rechten.
-  * Dieser Schritt erfolgt nach einer erfolgreichen Authentifizierung.
-  * Definiert, auf welche Ressourcen (Dateien, API-Endpunkte, Admin-Dashboards) der authentifizierte Benutzer zugreifen darf.
-  * Analogie: Nachdem Sie an der Tür identifiziert wurden, gibt Ihnen die "Hausordnung" (Autorisierung) das Recht, das Wohnzimmer zu betreten, aber nicht das Schlafzimmer.
+<p style="text-align: left; font-size: 0.6em;">Die Studierenden prüfen außerdem mit Hilfe von selbstgewählten und geeigneten Übungen, ob die Studierende die Informationen wirklich verstanden haben.</p>
 
+<p style="text-align: left; font-size: 0.6em;">Die Studierenden entwickeln, fördern und stärken vor allem kognitive Fähigkeiten und soziale Kompetenzen. Hierzu zählen Systemdenken und das Vermögen Wesentliches von Unwesentlichem zu unterscheiden sowie Teamfähigkeit und Kommunikationsfähigkeit.</p>
+
+<p style="text-align: left; font-size: 0.6em;">Hierbei geht es jedoch nicht um eine umfassende Grundlagenforschung, sondern vielmehr um das Vermitteln von fachspezifischen und berufsangewandten Kenntnissen. Gerade in der vorherrschenden Informationsgesellschafft, gilt es permanent die Informationsströme zu kanalisieren, wichtiges Wissen zu filtern und auf konkrete Einsatzgebiete sinnvoll anzuwenden.</p>
 
 --
 
